@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .c1{
+            position: relative;
+            display: inline-block;
+        }
+        .c2{
+            background-color: aqua;
+           
+            padding: 12px 25px;
+            cursor: pointer;/*butonunüzerine gelindiğinde farenin şekli değişir*/
+        
+        }
+    
+        .c3{
+            display: none;
+            position: absolute;
+            background-color: blanchedalmond;
+            min-width: 175;
+            padding: 0px;
+            border: 1px solid royalblue;
+            right: 0;/*sağa yaslandı*/
+        }
+        .c3 a{
+            display: block;
+            text-decoration: none;
+        }
+        .c1:hover .c3{
+            display: block;
+        }
+        .c3 a:hover{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="c1" style="float: right;">
+        <button class="c2">Tıkla</button>
+        <div class="c3">
+            <a href="#a">aaaaaaaaaaaaaaa</a>
+            <a href="#b">bbbbbbbbbbbbbbb</a>
+            <a href="#c">ccccccccccccccc</a>
+            <a href="#d">ddddddddddddddd</a>
+            
+        </div>
+    </div>
+</body>
+</html>

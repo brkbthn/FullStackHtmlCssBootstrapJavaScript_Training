@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .c{
+            float: left;
+            border: 1px solid gray;
+            margin: 4px;
+            padding: 6px;
+            width: 200px;/*resimlerin sığması için witdh=100% yapılır*/
+        }
+        button{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="c" id="id1">Resim1 <br>
+        <img src="skoda2.jpg" width="100%"height="200px" >
+        <button onclick="removeElement()">Kaldır</button>
+
+    </div>
+    <div class="c" id="id2">Resim2 <br>
+        <img src="skoda3.jpg"  width="100%"height="200px">
+        <button onclick="changeVisibility()">Gizle</button>
+
+    </div>
+    <div class="c" id="id3">Resim3 <br>
+        <img src="skoda5.jpg"  width="100%"height="200px">
+        <button onclick="resetElement()">Resetle</button>
+    </div>
+    <script>
+        function removeElement(){
+            document.getElementById("id1").style.display = "none";
+        }
+        function changeVisibility(){
+            document.getElementById("id2").style.visibility = "hidden";
+        }
+        function resetElement(){
+            document.getElementById("id1").style.display = "block";
+            document.getElementById("id2").style.visibility = "visible";
+        }
+    </script>
+</body>
+</html>

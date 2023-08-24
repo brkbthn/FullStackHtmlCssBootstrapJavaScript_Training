@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .c1{
+            display:flex;
+            background-color:aqua;
+            justify-content: center;/*kutucukların hizalanmasını sağlar*/
+            height: 500px;
+            align-items:center;/*dikey hizalamayı sağlar*/
+            align-content:flex-end;
+            
+            }
+        .c1>div{
+            background-color:chartreuse;
+            margin: 7px;
+            padding:22px;
+            width:330px;
+            height:400px;
+            text-align:center;
+            line-height: 60px;/*sayıları düşeyde aşağı hizaladık*/
+            font-size:40px;
+            /*order sıralamayı değiştirmeye yarar flex-grow ise kutucukların büyüklüğünü değiştirmeyi*/
+            /*flex-shrink:0 kutucuk için verilen css değerinin sığdırmak için ezilmesini engeller*/
+        }
+    </style>
+</head>
+<body>
+    <div class="c1">
+        <div style="order:0">1</div>
+        <div>2</div>
+        <div style="flex-shrink:0 ;">3</div>
+        <div style="flex-grow:4">4</div>
+        <div>5</div>
+        <div style="flex-grow:6">6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+   
+        
+
+    </div>
+</body>
+</html>

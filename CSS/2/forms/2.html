@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text]{
+            width: 100%;
+            margin: 7px;
+            padding: 13px 15px;
+            border: 4px dotted brown;
+            border-radius: 15px;
+            box-sizing: border-box;
+            background-color: aqua;
+            background-image: url('search.png');
+        }
+        input[type=text]:focus{
+            background-color: blanchedalmond;
+            /*input'a tıklandığı anda background color değişir*/
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="berk">İsminiz nedir?</label>
+        <input type="text" name="berk" >
+        <label for="batuhan">Soyadınız nedir?</label>
+        <input type="text" name="batuhan">
+    </form>
+</body>
+</html>

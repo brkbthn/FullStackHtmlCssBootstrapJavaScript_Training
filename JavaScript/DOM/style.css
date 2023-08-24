@@ -1,0 +1,10 @@
+.error{
+    padding:  9px;
+    color:  red;
+    border: 2px solid violet;
+}
+.success{
+    padding: 12px;
+    color: aquamarine;
+    border: 4px dashed chartreuse;
+}

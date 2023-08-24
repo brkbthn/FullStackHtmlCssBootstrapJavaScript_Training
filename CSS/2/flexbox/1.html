@@ -1,0 +1,44 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .c1{
+            display:flex;
+            background-color:aqua;
+            flex-direction: row;
+            flex-wrap:wrap; /*verilen width ve height değerlerinin geçerli olmasını sağlar tek satırda sıkışmayı önler*/
+            flex-flow: row wrap;/*bu özellik flex-direction ve flex-wrap özelliklerinin tek satırda verilmesini sağlar*/
+            justify-content: center;/*kutucukların hizalanmasını sağlar*/
+            height: 500px;
+            align-items:center;/*dikey hizalamayı sağlar*/
+            align-content:flex-end;
+            
+            }
+        .c1>div{
+            background-color:chartreuse;
+            margin: 7px;
+            padding:22px;
+            width:70px;
+            height:100px;
+            text-align:center;
+            line-height: 60px;/*sayıları düşeyde aşağı hizaladık*/
+            font-size:40px;
+            /*order sıralamayı değiştirmeye yarar flex-grow ise kutucukların büyüklüğünü değiştirmeyi sağlar ikisinin de default değeri 0 dır*/
+        }
+    </style>
+</head>
+<body>
+    <div class="c1">
+        <div style="order:4">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div style="flex-grow:4">4</div>
+        <div>5</div>
+        <div style="flex-grow:6">6</div>
+        <div>7</div>
+   
+        
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text]:enabled{/*disabled olmayanlar otomatik olarak enabled olur*/
+            background: rebeccapurple ;
+        }
+        input[type=text]:disabled{
+            background-color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="">
+        İsim-Soyisim:<input type="text" value="Batuhan Devran" > <br>
+        Mahalle:<input type="text" value="Yeşilyurt" ><br>
+        İlçe:<input type="text" value="Anamur"> <br>
+        İl:<input type="text" disabled="disabled" value="Mersin"> <br>
+    </form>
+</body>
+</html>

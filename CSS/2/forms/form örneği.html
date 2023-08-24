@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: bisque;
+            padding: 19px;
+        }
+        input{
+            margin: 13px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        input:hover{
+            background-color: darkgray;
+        }
+        button{
+            margin: 13px;
+            width: 100%;
+            background-color: aquamarine;
+            box-sizing: border-box;
+        }
+        label{
+            margin: 13px;
+        }
+        select{
+            width: 100%;
+            margin: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <form>
+        <label for="isim">İsminiz;</label>
+        <input type="text" placeholder="isim">
+        <label for="soyisim">soyisminiz;</label>
+        <input type="text" placeholder="soyisim">
+        <label for="Üniversite">Üniversiteniz;</label>
+        <input type="text" placeholder="üniversite">
+        <label for="şehir">Şehir</label>
+        <select name="şehir">
+            <option value="anamur">ANAMUR</option>
+            <option value="istanbul">İSTANBUL</option>
+            <option value="ankara">ANKARA</option>
+        </select>
+        <button type="submit">Giriş</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+</head>
+<body>
+	<img src="1.jpg" width="150" height="150">
+	<img src="2.jpg" width="150" height="150">
+<div style="padding-top:50px; background-image: url('3.jpg');">
+	<!-- div etiketi belirli bir alan kapsamaya yarar-->
+	<p style="padding:100px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+	
+<picture>
+	<soruce media ="(min-width: 650px)" srcset="1.jpg"><!--650 den 1980 e kadar 1.foto-->
+	<source media=1(min-width: 478px) srcset="2.jpg"><!-- 478 den 650 ye kadar 2.foto-->
+	<img src="3.jpg"> <!-- 0 dan 478 e kadar 3.foto-->
+</picture>
+
+</body>
+</html>

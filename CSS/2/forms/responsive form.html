@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .c3{
+            float: left;
+            width: 25%;
+            margin-top: 12px;
+        }
+        .c4{
+            float: left;
+            width: 75%;
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+        .c5::after{
+            content: "";
+            display: table;
+            clear: both;
+            
+        }
+        textarea{
+            width: 60%;
+        }
+        input[type=text], select, textarea{
+            box-sizing: border-box;
+            border: 2px dashed rgb(69, 124, 14);
+            padding: 13px;
+            width: 100%;
+            resize: vertical;/*textarea sadece düşey yönde şekillendirilebilir*/
+            
+        }
+        input[type=text]:hover{
+            background-color: chartreuse;
+        }
+        select:hover{
+            background-color: chartreuse;
+        }
+        textarea:hover{
+            background-color: chartreuse;
+        }
+        input[type=submit]{
+            padding: 17px 33px;
+            cursor: pointer;
+            float:right;
+            border-radius: 12px;
+            background-color: aqua;
+            color: coral;
+        }
+        input[type=submit]:hover{
+            background-color: chartreuse;
+        }
+        .c1{
+            background-color: rgb(202, 85, 150);
+            padding: 23px;
+        }
+        /*RESPONSİVE GÖRÜNÜM*/
+        @media screen and (max-width:768px) {
+            .c3, .c4, input[type=submit]{
+                width: 100%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="c1">
+            <form action="#">
+                <div class="c2">
+                    <div class="c3">
+                        <label for="isim">isim;</label>
+
+                    </div>
+                    <div class="c4">
+                        <input type="text" name="isim" placeholder="isim">
+
+                    </div>
+                    <div class="c3">
+                        <label for="soyisim">soyisim;</label>
+
+                    </div>
+                    <div class="c4">
+                        <input type="text" name="soyisim" placeholder="soyisim">
+
+                    </div>
+                    <div class="c3">
+                        <label for="mesaj">mesajınız;</label>
+
+                    </div>
+                    <div class="c4">
+                        <textarea name="mesaj" placeholder="mesajınız..."></textarea>
+                    </div>
+                    
+                    <div class="c3">
+                        <label for="şehir">şehir;</label>
+
+                    </div>
+                    
+
+                    <div class="c4">
+                       <select name="şehir">
+                        <option value="mersin">mersin</option>
+                        <option value="istanbul">istanbul</option>
+                        <option value="ankara">ankara</option>
+                       </select>
+                    </div>
+                    
+                </div>
+                <div class="c5">
+                    <input type="submit" value="katıl">
+                </div>
+            </form>
+        </div>
+    </body>
+    </html>
+</body>
+</html>

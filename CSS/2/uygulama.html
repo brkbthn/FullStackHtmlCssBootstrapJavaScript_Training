@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .c0{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: blue;
+            overflow: auto;
+        }
+        .c0 li{
+            float: left;
+        }
+        .c0 li a{
+            display: inline-block;/*padding verilebilmesi için gerekli*/
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+        .c1{
+            background-color: chartreuse;
+        }
+        .c0 a:hover{
+            background-color: cornsilk;
+        }
+        .clearfix{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .cc1 li a{
+            display: block;
+            background-color: darkgray;
+            margin-bottom: 3px;
+            padding: 7px;
+            color: black;
+            
+        }
+        .cc1 li a:hover{
+            background-color: rgb(191, 45, 123);
+
+        }
+        .cc1{
+            width: 25%;
+
+        }
+        .cc1 ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .cc1 li a{
+            display: block;
+            padding: 10px;
+            margin-bottom: 3px;
+            text-decoration: none;
+
+        }
+        .cc2{
+            width: 75%;
+        }
+        .cc{
+            float: left;
+            padding: 12px;
+           
+        }
+        .cc3{
+            background-color: aqua;
+            padding: 17px;
+            text-align: center;
+        }
+        .footer{
+            background-color: cadetblue;
+            padding: 13px;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="c0">
+        <li class="c1"><a href="a">Home</a></li>
+        <li><a href="b">News</a></li>
+        <li><a href="c">Contact</a></li>
+        <li><a href="d">About</a></li>
+    </ul>
+    <div class="clearfix">
+    <div class="cc cc1">
+    <ul>
+        <li><a href="#fligt">The Flight</a></li>
+        <li><a href="#city">The City</a></li>
+        <li><a href="#island">The İsland</a></li>
+        <li><a href="#food">The Food</a></li>
+        <li><a href="#people">The People</a></li>
+        <li><a href="#history">The History</a></li>
+        <li><a href="#oceans">The Oceans</a></li>
+    </ul>
+    </div>
+    <div class="cc cc2">
+        <div class="cc3">
+            <h1>The City</h1>
+        </div>
+        <h1>China</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos architecto, repellat culpa, totam porro vero aliquam at veniam qui omnis debitis distinctio! Ipsum sapiente, rem accusantium sint sit alias voluptatem?</p>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+    </div>
+</div>
+<div class="footer">
+    <p>Footer Text</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text]{
+            width: 180px;
+            margin: 7px;
+            padding: 13px 15px 13px 40px;/*yazının başlayacağı yer düzenlendi*/
+            border: 4px dotted brown;
+            border-radius: 15px;
+            box-sizing: border-box;
+            background-color: aqua;
+            background-image: url('search.png');
+            background-repeat: no-repeat;/*arka plandaki image nin tekrar etmesini engeller*/
+            background-size: 32px;
+            background-position: 9px 8px;
+        }
+        input[type=text]:focus{
+            background-color: blanchedalmond;/*input'a tıklandığı anda background color değişir*/
+            width: 100%;
+        }
+        textarea{
+            width: 100%;
+            font-size: 22px;
+            height: 155px;
+            border: 3px solid aquamarine;
+             /*şu durmda yazının olduğu kısımdaki border mause ile şekillendirilebilir*/
+             resize: none;/*artık değişiklik yapılamaz*/
+        }
+        select{
+            width: 90%;
+            margin: 12px;
+            padding: 13px;
+            border: 3px solid coral;
+        }
+       input{
+        padding: 14px;
+        cursor: pointer;
+        background-color: cornflowerblue;
+       }
+
+    </style>
+</head>
+<body>
+    <form>
+        <label for="berk">İsminiz nedir?</label>
+        <input type="text" name="berk" placeholder="adınız">
+        <label for="batuhan">Soyadınız nedir?</label>
+        <input type="text" name="batuhan" placeholder="soyadınız">
+        <textarea>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt veritatis enim voluptas eligendi accusantium. Quam, enim accusantium ducimus alias omnis ullam dolorem molestias voluptates ratione cum. Tenetur quisquam natus error expedita, fuga deserunt delectus ipsum voluptates. Saepe tempora amet debitis eligendi aspernatur magnam suscipit consequatur officiis sit, voluptates fugit, quaerat autem magni. Ea laboriosam blanditiis similique aspernatur dolorem, et numquam ab deserunt, quas tempora minima voluptas aut iste autem veritatis! Accusamus vero impedit pariatur necessitatibus. Cupiditate sequi libero, aperiam repudiandae ipsam suscipit at quos ipsa rem ab aspernatur aut deserunt! Sapiente dolor sunt accusantium temporibus hic tempora repudiandae possimus molestias vero cupiditate earum dolorum ad necessitatibus tempore fuga eius omnis odit officia nisi, neque reprehenderit numquam! Maiores officiis sint vel. Iure assumenda animi voluptatem similique, suscipit doloremque esse quas perferendis repellat recusandae optio ipsa ad ex fugiat amet eius impedit incidunt accusantium sunt laboriosam. Hic iure aspernatur earum ab velit est quisquam. Sit enim quaerat nihil voluptatibus adipisci debitis dolore tempora impedit repellat! Dolore alias rem ducimus id exercitationem aut odit aliquid consequatur velit quae unde cumque, nisi esse quia quis facilis reprehenderit iusto cupiditate dolorem sed architecto ut autem explicabo ea. Molestias mollitia beatae eius voluptate ea magni neque cumque fugiat et nam tenetur consequuntur nemo debitis pariatur nostrum possimus animi voluptatem, quasi numquam inventore harum eligendi omnis? Obcaecati laborum ipsa at quis! Culpa sapiente officia id quidem unde impedit modi, veniam mollitia eius deserunt quae earum. Obcaecati ab doloremque sunt, consectetur eos porro aperiam delectus beatae? Inventore aliquid nisi excepturi obcaecati ipsa porro beatae, consequatur, aperiam reprehenderit sit laborum ab deleniti vel doloribus quasi officiis suscipit doloremque itaque. Fugiat labore cupiditate, minus dolorum eligendi, laborum quisquam quo quod voluptas aspernatur tenetur! Earum nam est debitis quibusdam, porro molestias, architecto placeat repellendus ea eaque, cupiditate repudiandae eveniet sunt nesciunt?</textarea>
+ 
+    <select name="country">
+        <option value="Turkey">Türkiye</option>
+        <option value="Netherlan">Hollanda</option>
+        <option value="ABD">Amerika</option>
+    </select>
+    <input type="button" value="button">
+    <input type="submit">
+    <input type="reset">
+</form>
+</body>
+</html>
